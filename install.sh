@@ -4,6 +4,7 @@ operation=$1
 echo "Please provide  username"
 case $1 in
     install)
+        sudo apt-get install vim 
         rm -rf ~/.vim/bundle
         cp .vimrc ~/.vimrc
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
